@@ -906,30 +906,6 @@ class _EquationCalculatorState extends State<EquationCalculator> {
                           style: textStyle.copyWith(color: white, fontSize: 15),
                         ),
                       ),
-                      CalcButton(
-                        callback: () {
-                          setState(() {
-                            state = parser.parse(state).derive("x").toString();
-                          });
-                          justAnswered = true;
-                        },
-                        child: Text(
-                          "Diff X",
-                          style: textStyle.copyWith(color: white, fontSize: 15),
-                        ),
-                      ),
-                      CalcButton(
-                        callback: () {
-                          setState(() {
-                            state = parser.parse(state).derive("y").toString();
-                          });
-                          justAnswered = true;
-                        },
-                        child: Text(
-                          "Diff Y",
-                          style: textStyle.copyWith(color: white, fontSize: 15),
-                        ),
-                      ),
                     ],
                   )
                 ],
